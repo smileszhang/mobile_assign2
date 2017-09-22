@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951860111F6ACAE80034112E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951860101F6ACAE80034112E /* TableViewController.m */; };
+		952C6F701F746559002291A2 /* SingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C6F6F1F746559002291A2 /* SingleViewController.m */; };
+		95EF8CAD1F75AFD200E27FAA /* MBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EF8CAC1F75AFD200E27FAA /* MBViewController.m */; };
 		B6BD9E1F1D6E384A0009AB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BD9E1E1D6E384A0009AB3F /* main.m */; };
 		B6BD9E221D6E384A0009AB3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BD9E211D6E384A0009AB3F /* AppDelegate.m */; };
 		B6BD9E251D6E384A0009AB3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BD9E241D6E384A0009AB3F /* ViewController.m */; };
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9518600F1F6ACAE80034112E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		951860101F6ACAE80034112E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		952C6F6E1F746559002291A2 /* SingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewController.h; sourceTree = "<group>"; };
+		952C6F6F1F746559002291A2 /* SingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewController.m; sourceTree = "<group>"; };
+		95EF8CAB1F75AFD200E27FAA /* MBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBViewController.h; sourceTree = "<group>"; };
+		95EF8CAC1F75AFD200E27FAA /* MBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBViewController.m; sourceTree = "<group>"; };
 		B6BD9E1A1D6E384A0009AB3F /* AudioLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BD9E1E1D6E384A0009AB3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6BD9E201D6E384A0009AB3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,12 +130,18 @@
 				B6BD9E231D6E384A0009AB3F /* ViewController.h */,
 				B6BD9E241D6E384A0009AB3F /* ViewController.m */,
 				B6BD9E261D6E384A0009AB3F /* Main.storyboard */,
+				95EF8CAB1F75AFD200E27FAA /* MBViewController.h */,
+				95EF8CAC1F75AFD200E27FAA /* MBViewController.m */,
+				9518600F1F6ACAE80034112E /* TableViewController.h */,
+				951860101F6ACAE80034112E /* TableViewController.m */,
 				B6BD9E291D6E384A0009AB3F /* Assets.xcassets */,
 				B6BD9E2B1D6E384A0009AB3F /* LaunchScreen.storyboard */,
 				B6BD9E2E1D6E384A0009AB3F /* Info.plist */,
 				B6BD9E1D1D6E384A0009AB3F /* Supporting Files */,
 				B6BD9E5C1D6E59880009AB3F /* SMUGraphHelper.h */,
 				B6BD9E5D1D6E59880009AB3F /* SMUGraphHelper.m */,
+				952C6F6E1F746559002291A2 /* SingleViewController.h */,
+				952C6F6F1F746559002291A2 /* SingleViewController.m */,
 			);
 			path = AudioLab;
 			sourceTree = "<group>";
@@ -238,6 +253,7 @@
 				TargetAttributes = {
 					B6BD9E191D6E384A0009AB3F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = C574GR48RP;
 					};
 					B6BD9E321D6E384A0009AB3F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -304,11 +320,14 @@
 			files = (
 				B6BD9E5E1D6E59880009AB3F /* SMUGraphHelper.m in Sources */,
 				B6BD9E591D6E43140009AB3F /* CircularBuffer.m in Sources */,
+				952C6F701F746559002291A2 /* SingleViewController.m in Sources */,
 				B6BD9E641D6F4BA90009AB3F /* FFTHelper.m in Sources */,
 				B6BD9E531D6E398F0009AB3F /* Novocaine.m in Sources */,
+				95EF8CAD1F75AFD200E27FAA /* MBViewController.m in Sources */,
 				B6BD9E251D6E384A0009AB3F /* ViewController.m in Sources */,
 				B6BD9E221D6E384A0009AB3F /* AppDelegate.m in Sources */,
 				B6BD9E1F1D6E384A0009AB3F /* main.m in Sources */,
+				951860111F6ACAE80034112E /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,9 +468,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C574GR48RP;
 				INFOPLIST_FILE = AudioLab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SMU.AudioLab;
+				PRODUCT_BUNDLE_IDENTIFIER = AudioLabYANG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -460,9 +481,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C574GR48RP;
 				INFOPLIST_FILE = AudioLab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SMU.AudioLab;
+				PRODUCT_BUNDLE_IDENTIFIER = AudioLabYANG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
